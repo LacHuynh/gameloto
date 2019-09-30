@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textStyle="bold|italic"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GameLoto!" />
+
+    <EditText
+        android:id="@+id/ET1"
+        android:inputType="number"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Min" />
+    <EditText
+        android:id="@+id/ET2"
+        android:inputType="number"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Max" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/BT1"
+            android:layout_centerHorizontal="true"
+            android:text="Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/BT1"
+            android:textSize="20sp"
+            android:id="@+id/BT2"
+            android:layout_above="@id/BT2"
+            android:text="ADD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/BT2"
+            android:textSize="20sp"
+            android:id="@+id/BT3"
+            android:text="Resert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+    </RelativeLayout>
+    <TextView
+        android:text="KQ"
+        android:layout_gravity="center"
+        android:id="@+id/TV1"
+        android:textSize="50sp"
+        android:layout_marginTop="20sp"
+        android:textColor="#ef5350"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
